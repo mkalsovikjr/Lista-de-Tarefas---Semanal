@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📅 LISTA DE TAREFAS - SEMANAL</h1>
+
+    <!-- Área para adicionar tarefa -->
+    <div class="input-area">
+      <input type="text" id="tarefa" placeholder="Digite uma tarefa...">
+      <select id="dia">
+        <option value="Segunda">Segunda</option>
+        <option value="Terça">Terça</option>
+        <option value="Quarta">Quarta</option>
+        <option value="Quinta">Quinta</option>
+        <option value="Sexta">Sexta</option>
+        <option value="Sábado">Sábado</option>
+        <option value="Domingo">Domingo</option>
+      </select>
+      <button onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+
+    <!-- Grade de dias da semana -->
+    <div class="semana">
+      <div class="coluna"><h2>Segunda</h2><ul id="Segunda"></ul></div>
+      <div class="coluna"><h2>Terça</h2><ul id="Terça"></ul></div>
+      <div class="coluna"><h2>Quarta</h2><ul id="Quarta"></ul></div>
+      <div class="coluna"><h2>Quinta</h2><ul id="Quinta"></ul></div>
+      <div class="coluna"><h2>Sexta</h2><ul id="Sexta"></ul></div>
+      <div class="coluna"><h2>Sábado</h2><ul id="Sábado"></ul></div>
+      <div class="coluna"><h2>Domingo</h2><ul id="Domingo"></ul></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
